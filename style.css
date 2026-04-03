@@ -1,0 +1,441 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   1. Reset & Base Styles
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* 読みやすく落ち着いたフォントファミリー */
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #333333; /* 視認性の高いダークグレー */
+    line-height: 1.7;
+    background-color: #f8fafc; /* 少し温かみのあるオフホワイト背景 */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #2c5282; /* 信頼感のある深いブルー */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4299e1; /* ホバー時は明るめのブルー */
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   2. Layout & Container
+   ========================================================================== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.layout-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.main-content {
+    flex: 1 1 65%;
+    min-width: 300px;
+}
+
+.sidebar {
+    flex: 1 1 25%;
+    min-width: 250px;
+}
+
+/* ==========================================================================
+   3. Header & Navigation
+   ========================================================================== */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 20px 0;
+}
+
+.header-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.site-title a {
+    color: #2d3748;
+    text-decoration: none;
+}
+
+.site-title a:hover {
+    text-decoration: none;
+    color: #2c5282;
+}
+
+.global-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.global-nav a {
+    color: #4a5568;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.global-nav a:hover {
+    color: #2b6cb0;
+    text-decoration: none;
+}
+
+.lang-nav {
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #a0aec0;
+}
+
+/* ==========================================================================
+   4. Hero Image (ヘッダー画像)
+   ========================================================================== */
+.hero-image {
+    width: 100%;
+    height: 380px;
+    background-color: #cbd5e0; /* 画像がない場合のプレースホルダー色 */
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   5. Philosophy Section (理念文)
+   ========================================================================== */
+.philosophy-section {
+    background-color: #2c5282; /* 知的な印象を与えるネイビー */
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.philosophy-section h2 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+}
+
+.philosophy-section p {
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* ==========================================================================
+   6. Main Content Sections
+   ========================================================================== */
+.section-title {
+    font-size: 1.5rem;
+    color: #2d3748;
+    border-bottom: 2px solid #2c5282;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+/* --- 注目記事 (Top News) --- */
+.news-article {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+    border-left: 4px solid transparent;
+    transition: border-left-color 0.3s ease;
+}
+
+.news-article:hover {
+    border-left-color: #2c5282;
+}
+
+.news-article h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.25rem; line-height: 1.4;
+}
+
+.article-meta {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-bottom: 12px;
+}
+
+.article-summary {
+    color: #4a5568;
+    margin-bottom: 16px;
+}
+
+.read-more {
+    font-weight: bold;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+/* --- テーマ別入口 --- */
+.themes-section {
+    margin-top: 50px;
+}
+
+.theme-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.theme-card {
+    flex: 1 1 30%;
+    min-width: 220px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-top: 4px solid #2c5282;
+    display: flex;
+    flex-direction: column;
+}
+
+.theme-card h3 {
+    margin-top: 0;
+    color: #2d3748;
+    font-size: 1.2rem;
+}
+
+.theme-card p {
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+    flex-grow: 1; /* ボタンをカード下部に揃えるため */
+}
+
+/* ボタン共通スタイル */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #ebf8ff;
+    color: #2c5282;
+    border: 1px solid #bee3f8;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2c5282;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* --- 学習資料・教材バナー --- */
+.learning-resources-banner {
+    margin-top: 50px;
+    background-color: #f0f4f8; /* 薄いブルーグレー */
+    border: 1px solid #e2e8f0;
+    padding: 40px 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.learning-resources-banner .section-title {
+    border-bottom: none;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+}
+
+.learning-resources-banner p {
+    color: #4a5568;
+    margin-bottom: 24px;
+}
+
+.btn-primary {
+    background-color: #2c5282;
+    color: #ffffff;
+    border: none;
+    font-size: 1rem;
+    padding: 12px 28px;
+}
+
+.btn-primary:hover {
+    background-color: #1a365d;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ==========================================================================
+   7. Sidebar (サイドメニュー)
+   ========================================================================== */
+.widget {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 24px;
+}
+
+.widget-title {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-top: 0;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+}
+
+/* タイトルの装飾アクセント */
+.widget-title::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #2c5282;
+}
+
+.widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-list li {
+    margin-bottom: 12px;
+}
+
+.widget-list li:last-child {
+    margin-bottom: 0;
+}
+
+.widget-list a {
+    color: #4a5568;
+    display: block;
+    line-height: 1.4;
+    padding: 4px 0;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.widget-list a:hover {
+    color: #2c5282;
+    padding-left: 4px; /* ホバー時に少し右へ動くアニメーション */
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   8. Footer
+   ========================================================================== */
+.site-footer {
+    background-color: #2d3748; /* ダークグレー */
+    color: #a0aec0;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #e2e8f0;
+    margin: 0 15px;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   9. Responsive (レスポンシブ対応)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    .header-inner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .global-nav ul {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .lang-nav {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .layout-wrapper {
+        flex-direction: column; /* スマホで縦並びに */
+        gap: 30px;
+    }
+    
+    .theme-card {
+        flex: 1 1 100%;
+    }
+    
+    .hero-image {
+        height: 220px; /* スマホでは高さを抑える */
+    }
+    
+    .philosophy-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .philosophy-section p {
+        font-size: 1rem;
+    }
+}
