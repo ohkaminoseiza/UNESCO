@@ -72,12 +72,42 @@ UNESCO/
 - 英語版: `en/ai.html` / `en/environment.html` / `en/human-rights.html`
 - 一覧の **先頭**（最新順）に追加する
 
-### ステップ3: トップページのサイドバーを更新
-- `index.html` の「最新記事」ウィジェット
-- `en/index.html` の「Latest Articles」ウィジェット
+### ステップ3: トップページの Top News セクションに追加
+- `index.html` の `<section class="top-news">` 内に `<article class="news-article">` ブロックを追加
+- `en/index.html` にも同様に英語版ブロックを追加
+- **最新記事が一番上**になるよう順序を管理する
+- 記事が増えた場合は古い記事を下へ移動し、複数記事を並べて表示できる
 
-### ステップ4: アーカイブページに追加
-- `archive/index.html` の該当月のリストに追加
+#### Top News の記事ブロック（日本語版テンプレート）
+```html
+<article class="news-article">
+    <h3><a href="posts/ファイル名.html">記事タイトル</a></h3>
+    <p class="article-meta">YYYY年M月D日 | テーマ, 教育</p>
+    <p class="article-summary">
+        記事の要約文（2〜3文程度）
+    </p>
+    <a href="posts/ファイル名.html" class="read-more">続きを読む &raquo;</a>
+</article>
+```
+
+#### Top News の記事ブロック（英語版テンプレート）
+```html
+<article class="news-article">
+    <h3><a href="posts/ファイル名.html">Article Title</a></h3>
+    <p class="article-meta">Month D, YYYY | Theme, Education</p>
+    <p class="article-summary">
+        Summary of the article (2–3 sentences).
+    </p>
+    <a href="posts/ファイル名.html" class="read-more">Read More &raquo;</a>
+</article>
+```
+
+### ステップ4: トップページのサイドバーを更新
+- `index.html` の「最新記事」ウィジェット（最新順、上から追加）
+- `en/index.html` の「Latest Articles」ウィジェット（同様）
+
+### ステップ5: アーカイブページに追加
+- `archive/index.html` の該当月のリストに追加（最新順）
 - `en/archive/index.html` にも同様に追加
 
 ---
