@@ -68,3 +68,5 @@
 - [Digital Watch Observatory — Responsible AI gaps report](https://dig.watch/updates/unesco-responsible-ai-practice-report)
 - [UNESCO Artificial Intelligence and Emerging Technologies](https://www.unesco.org/en/artificial-intelligence)
 - [UNESCO Tags: Artificial Intelligence](https://www.unesco.org/en/tags/artificial-intelligence)
+- [UNESCO advances regional AI in education observatory – Digital Watch Observatory](https://dig.watch/updates/unesco-advances-regional-ai-education-observatory)
+- [Launch event overview – Indico.UN](https://indico.un.org/event/1023095/)
