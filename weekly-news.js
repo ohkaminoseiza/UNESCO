@@ -3,13 +3,13 @@
  * GitHub上のweekly_reportsディレクトリから最新のウィークリーレポートを取得し、
  * サイドバーに「最新ニュース」として表示するスクリプト
  *
- * ディレクトリ構造:
- *   weekly_reports/ai/              ← 日本語版AIレポート
- *   weekly_reports/human_rights/    ← 日本語版人権レポート
- *   weekly_reports/environment/     ← 日本語版環境レポート
- *   weekly_reports/en/ai/           ← 英語版AIレポート
- *   weekly_reports/en/human_rights/ ← 英語版人権レポート
- *   weekly_reports/en/environment/  ← 英語版環境レポート
+ * ファイル命名規則:
+ *   日本語版: {date}_unesco_{topic}_weekly.md
+ *   英語版:   {date}_unesco_{topic}_weekly_en.md
+ *
+ * 例:
+ *   weekly_reports/ai/2026-05-10_unesco_ai_weekly.md     ← 日本語版
+ *   weekly_reports/ai/2026-05-10_unesco_ai_weekly_en.md  ← 英語版
  */
 
 (function () {
@@ -35,7 +35,8 @@
             error: 'ニュースを取得できませんでした',
             close: '閉じる',
             sources: '情報源',
-            overview: '概要'
+            overview: '概要',
+            archive: '📂 過去のニュースを見る »'
         },
         en: {
             title: '📰 Weekly News',
@@ -43,7 +44,8 @@
             error: 'Failed to load news',
             close: 'Close',
             sources: 'Sources',
-            overview: 'Overview'
+            overview: 'Overview',
+            archive: '📂 View News Archive »'
         }
     };
 
@@ -51,24 +53,26 @@
 
     /**
      * GitHub APIからフォルダ内のファイル一覧を取得
+     * 同一フォルダ内のファイル名で日英を区別:
+     *   日本語版: *_weekly.md (末尾が _en.md でないもの)
+     *   英語版:   *_weekly_en.md
      */
     async function fetchFileList(category) {
-        // 言語に応じてAPIパスを切り替え
-        // 日本語: weekly_reports/{category}/
-        // 英語:   weekly_reports/en/{category}/
-        const apiPath = lang === 'en'
-            ? `${GITHUB_API_BASE}/en/${category}`
-            : `${GITHUB_API_BASE}/${category}`;
-        const rawPath = lang === 'en'
-            ? `${GITHUB_RAW_BASE}/en/${category}`
-            : `${GITHUB_RAW_BASE}/${category}`;
+        const apiPath = `${GITHUB_API_BASE}/${category}`;
+        const rawPath = `${GITHUB_RAW_BASE}/${category}`;
 
         try {
             const response = await fetch(apiPath);
             if (!response.ok) throw new Error(`HTTP ${response.status}`);
             const files = await response.json();
             return files
-                .filter(f => f.name.endsWith('.md'))
+                .filter(f => {
+                    if (!f.name.endsWith('.md')) return false;
+                    // 英語版サイト → _en.md ファイルのみ
+                    // 日本語版サイト → _en.md 以外のファイルのみ
+                    const isEnglishFile = f.name.endsWith('_en.md');
+                    return lang === 'en' ? isEnglishFile : !isEnglishFile;
+                })
                 .map(f => ({
                     name: f.name,
                     category: category,
@@ -244,8 +248,13 @@
         const list = document.createElement('div');
         list.className = 'weekly-news-list';
 
-        // 最新5日分まで表示
-        const displayDates = sortedDates.slice(0, 5);
+        // 約2か月分（9週）まで表示
+        const twoMonthsAgo = new Date();
+        twoMonthsAgo.setMonth(twoMonthsAgo.getMonth() - 2);
+        const cutoffDate = twoMonthsAgo.toISOString().slice(0, 10);
+
+        const displayDates = sortedDates.filter(date => date >= cutoffDate);
+        const hasOlderDates = sortedDates.length > displayDates.length;
 
         displayDates.forEach(date => {
             const dateGroup = document.createElement('div');
@@ -281,6 +290,17 @@
         });
 
         widget.appendChild(list);
+
+        // アーカイブへのリンクを追加（常に表示）
+        const archiveLink = document.createElement('div');
+        archiveLink.className = 'weekly-news-archive-link';
+        const archivePath = lang === 'en' ? 'en/weekly-news-archive.html' : 'weekly-news-archive.html';
+        // 英語版ページからの相対パス補正
+        const isSubDir = window.location.pathname.includes('/en/');
+        const href = isSubDir && lang === 'en' ? 'weekly-news-archive.html' : archivePath;
+        archiveLink.innerHTML = `<a href="${href}">${labels.archive}</a>`;
+        widget.appendChild(archiveLink);
+
         return widget;
     }
 
@@ -394,6 +414,35 @@
             .weekly-news-cat-name {
                 font-weight: 500;
                 transition: color 0.2s ease;
+            }
+
+            /* ===== Archive Link ===== */
+            .weekly-news-archive-link {
+                margin-top: 16px;
+                padding-top: 14px;
+                border-top: 1px dashed #e2e8f0;
+                text-align: center;
+            }
+
+            .weekly-news-archive-link a {
+                display: inline-block;
+                font-size: 0.82rem;
+                font-weight: 600;
+                color: #2c5282;
+                text-decoration: none;
+                padding: 6px 16px;
+                border: 1px solid #bee3f8;
+                border-radius: 6px;
+                background: #ebf8ff;
+                transition: all 0.2s ease;
+            }
+
+            .weekly-news-archive-link a:hover {
+                background: #2c5282;
+                color: #ffffff;
+                border-color: #2c5282;
+                transform: translateY(-1px);
+                box-shadow: 0 2px 6px rgba(44, 82, 130, 0.3);
             }
 
             /* ===== Modal Overlay ===== */

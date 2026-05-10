@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ウィークリーニュースのアーカイブ - AI、人権、環境に関する週次レポートの全記録">
+    <title>ウィークリーニュース アーカイブ - 教育・科学・文化</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXGG2W91WF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HXGG2W91WF');
+    </script>
+    <!-- End Google Analytics -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+        /* ===== Archive Page Styles ===== */
+        .archive-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .archive-header h2 {
+            font-size: 1.8rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .archive-header p {
+            color: #718096;
+            font-size: 0.95rem;
+        }
+
+        .archive-stats {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .archive-stat {
+            background: linear-gradient(135deg, #ebf8ff, #f7fafc);
+            border: 1px solid #bee3f8;
+            border-radius: 10px;
+            padding: 16px 24px;
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .archive-stat .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2c5282;
+            display: block;
+        }
+
+        .archive-stat .stat-label {
+            font-size: 0.8rem;
+            color: #718096;
+            margin-top: 4px;
+        }
+
+        /* Filter buttons */
+        .archive-filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .archive-filter-btn {
+            padding: 8px 18px;
+            border: 1px solid #bee3f8;
+            border-radius: 20px;
+            background: #f7fafc;
+            color: #2c5282;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .archive-filter-btn:hover,
+        .archive-filter-btn.active {
+            background: #2c5282;
+            color: #ffffff;
+            border-color: #2c5282;
+        }
+
+        /* Month group */
+        .archive-month-group {
+            margin-bottom: 32px;
+        }
+
+        .archive-month-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #2d3748;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2c5282;
+            margin-bottom: 16px;
+        }
+
+        .archive-date-group {
+            margin-bottom: 16px;
+            padding: 14px 18px;
+            background: #f7fafc;
+            border-radius: 8px;
+            border-left: 3px solid #2c5282;
+        }
+
+        .archive-date-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        .archive-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .archive-report-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: #ffffff;
+            border: 1px solid #bee3f8;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #2c5282;
+            text-decoration: none !important;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .archive-report-item:hover {
+            background: #2c5282;
+            color: #ffffff !important;
+            border-color: #2c5282;
+            transform: translateY(-1px);
+            box-shadow: 0 2px 6px rgba(44, 82, 130, 0.3);
+            text-decoration: none !important;
+        }
+
+        .archive-report-item:hover .archive-cat-name {
+            color: #ffffff;
+        }
+
+        .archive-cat-name {
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .archive-loading {
+            text-align: center;
+            padding: 60px 0;
+            color: #718096;
+        }
+
+        .archive-loading .spinner {
+            width: 36px;
+            height: 36px;
+            border: 4px solid #e2e8f0;
+            border-top-color: #2c5282;
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            animation: archive-spin 0.8s linear infinite;
+        }
+
+        @keyframes archive-spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .archive-empty {
+            text-align: center;
+            padding: 60px 0;
+            color: #718096;
+            font-size: 0.95rem;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-link a {
+            color: #2c5282;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 24px;
+            border: 1px solid #bee3f8;
+            border-radius: 6px;
+            background: #ebf8ff;
+            transition: all 0.2s ease;
+        }
+
+        .back-link a:hover {
+            background: #2c5282;
+            color: #ffffff;
+            border-color: #2c5282;
+        }
+
+        @media screen and (max-width: 768px) {
+            .archive-stats {
+                gap: 12px;
+            }
+            .archive-stat {
+                min-width: 90px;
+                padding: 12px 16px;
+            }
+            .archive-stat .stat-number {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ヘッダー・ナビゲーション領域 -->
+    <header class="site-header">
+        <div class="header-inner">
+            <h1 class="site-title"><a href="index.html">教育・科学・文化</a></h1>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="archive/index.html">Archive</a></li>
+                    <li class="lang-nav"><span style="color:#666; font-weight:bold;">日本語</span> | <a
+                            href="en/weekly-news-archive.html">English</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
+        <div class="archive-header">
+            <h2>📰 ウィークリーニュース アーカイブ</h2>
+            <p>AI、人権、環境に関する週次レポートの全記録</p>
+            <div id="archive-stats" class="archive-stats"></div>
+        </div>
+
+        <!-- カテゴリフィルター -->
+        <div class="archive-filters" id="archive-filters">
+            <button class="archive-filter-btn active" data-filter="all">すべて</button>
+            <button class="archive-filter-btn" data-filter="ai">🤖 AI</button>
+            <button class="archive-filter-btn" data-filter="human_rights">⚖️ 人権</button>
+            <button class="archive-filter-btn" data-filter="environment">🌿 環境</button>
+        </div>
+
+        <!-- アーカイブ一覧 -->
+        <div id="archive-content">
+            <div class="archive-loading">
+                <div class="spinner"></div>
+                <p>読み込み中...</p>
+            </div>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">← ホームに戻る</a>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+            </div>
+            <p class="copyright">&copy; 2026 個人メディア - 教育・科学・文化 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Weekly News Widget (モーダル機能の再利用) -->
+    <script src="weekly-news.js"></script>
+
+    <script>
+    (function() {
+        'use strict';
+
+        const GITHUB_API_BASE = 'https://api.github.com/repos/ohkaminoseiza/UNESCO/contents/weekly_reports';
+        const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/ohkaminoseiza/UNESCO/main/weekly_reports';
+
+        const CATEGORIES = {
+            ai: { name: 'AI', icon: '🤖' },
+            human_rights: { name: '人権', icon: '⚖️' },
+            environment: { name: '環境', icon: '🌿' }
+        };
+
+        let allFiles = [];
+        let currentFilter = 'all';
+
+        async function fetchAllFiles() {
+            const promises = Object.keys(CATEGORIES).map(async (cat) => {
+                try {
+                    const response = await fetch(`${GITHUB_API_BASE}/${cat}`);
+                    if (!response.ok) return [];
+                    const files = await response.json();
+                    return files
+                        .filter(f => f.name.endsWith('.md') && !f.name.endsWith('_en.md'))
+                        .map(f => ({
+                            name: f.name,
+                            category: cat,
+                            date: f.name.match(/^(\d{4}-\d{2}-\d{2})/)?.[1] || '',
+                            url: `${GITHUB_RAW_BASE}/${cat}/${f.name}`
+                        }));
+                } catch (e) {
+                    console.error(`Failed to fetch ${cat}:`, e);
+                    return [];
+                }
+            });
+
+            const results = await Promise.all(promises);
+            allFiles = results.flat().sort((a, b) => b.date.localeCompare(a.date));
+        }
+
+        function formatDate(dateStr) {
+            const [year, month, day] = dateStr.split('-');
+            return `${year}年${parseInt(month)}月${parseInt(day)}日`;
+        }
+
+        function getMonthKey(dateStr) {
+            const [year, month] = dateStr.split('-');
+            return `${year}-${month}`;
+        }
+
+        function formatMonth(monthKey) {
+            const [year, month] = monthKey.split('-');
+            return `${year}年${parseInt(month)}月`;
+        }
+
+        function updateStats(files) {
+            const statsEl = document.getElementById('archive-stats');
+            const uniqueDates = new Set(files.map(f => f.date));
+            const catCounts = {};
+            files.forEach(f => {
+                catCounts[f.category] = (catCounts[f.category] || 0) + 1;
+            });
+
+            statsEl.innerHTML = `
+                <div class="archive-stat">
+                    <span class="stat-number">${files.length}</span>
+                    <span class="stat-label">レポート総数</span>
+                </div>
+                <div class="archive-stat">
+                    <span class="stat-number">${uniqueDates.size}</span>
+                    <span class="stat-label">発行日数</span>
+                </div>
+                <div class="archive-stat">
+                    <span class="stat-number">${Object.keys(catCounts).length}</span>
+                    <span class="stat-label">カテゴリ</span>
+                </div>
+            `;
+        }
+
+        function renderArchive(filter) {
+            const container = document.getElementById('archive-content');
+            const filtered = filter === 'all'
+                ? allFiles
+                : allFiles.filter(f => f.category === filter);
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="archive-empty"><p>該当するレポートがありません。</p></div>';
+                return;
+            }
+
+            // 月でグループ化
+            const months = {};
+            filtered.forEach(file => {
+                const monthKey = getMonthKey(file.date);
+                if (!months[monthKey]) months[monthKey] = {};
+                if (!months[monthKey][file.date]) months[monthKey][file.date] = [];
+                months[monthKey][file.date].push(file);
+            });
+
+            const sortedMonths = Object.keys(months).sort((a, b) => b.localeCompare(a));
+
+            let html = '';
+            sortedMonths.forEach(monthKey => {
+                const dates = months[monthKey];
+                const sortedDates = Object.keys(dates).sort((a, b) => b.localeCompare(a));
+
+                html += `<div class="archive-month-group">`;
+                html += `<h3 class="archive-month-title">📅 ${formatMonth(monthKey)}</h3>`;
+
+                sortedDates.forEach(date => {
+                    html += `<div class="archive-date-group">`;
+                    html += `<div class="archive-date-label">${formatDate(date)}</div>`;
+                    html += `<div class="archive-items">`;
+
+                    dates[date].forEach(file => {
+                        const cat = CATEGORIES[file.category];
+                        html += `<a href="#" class="archive-report-item" data-url="${file.url}" data-category="${file.category}" data-date="${file.date}">
+                            <span>${cat.icon}</span>
+                            <span class="archive-cat-name">${cat.name}</span>
+                        </a>`;
+                    });
+
+                    html += `</div></div>`;
+                });
+
+                html += `</div>`;
+            });
+
+            container.innerHTML = html;
+
+            // クリックイベントを設定
+            container.querySelectorAll('.archive-report-item').forEach(item => {
+                item.addEventListener('click', async (e) => {
+                    e.preventDefault();
+                    const url = item.getAttribute('data-url');
+                    const category = item.getAttribute('data-category');
+                    const date = item.getAttribute('data-date');
+                    const cat = CATEGORIES[category];
+                    const title = `${cat.icon} ${cat.name} - ${formatDate(date)}`;
+
+                    // weekly-news.js のモーダルを再利用
+                    const overlay = document.getElementById('weekly-news-overlay');
+                    if (overlay) {
+                        document.getElementById('weekly-news-modal-title').textContent = title;
+                        document.getElementById('weekly-news-modal-body').innerHTML =
+                            '<p style="text-align:center; padding: 40px 0; color:#718096;">読み込み中...</p>';
+                        overlay.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+
+                        try {
+                            const response = await fetch(url);
+                            const md = await response.text();
+                            // 簡易Markdownパーサー
+                            let html = md
+                                .replace(/```[\s\S]*?```/g, match => {
+                                    const code = match.replace(/```\w*\n?/g, '').replace(/```/g, '');
+                                    return `<pre><code>${code.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</code></pre>`;
+                                })
+                                .replace(/^### (.+)$/gm, '<h4>$1</h4>')
+                                .replace(/^## (.+)$/gm, '<h3 class="weekly-news-h3">$1</h3>')
+                                .replace(/^# (.+)$/gm, '<h2 class="weekly-news-h2">$1</h2>')
+                                .replace(/^---+$/gm, '<hr class="weekly-news-hr">')
+                                .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+                                .replace(/^- (.+)$/gm, '<li>$1</li>')
+                                .replace(/\n\n/g, '</p><p>')
+                                .replace(/\n/g, '<br>');
+                            html = html.replace(/((?:<li>.*?<\/li><br>?)+)/g, '<ul>$1</ul>');
+                            html = html.replace(/<br><\/ul>/g, '</ul>');
+                            html = html.replace(/<ul><br>/g, '<ul>');
+                            document.getElementById('weekly-news-modal-body').innerHTML =
+                                `<div class="weekly-news-content"><p>${html}</p></div>`;
+                        } catch (err) {
+                            document.getElementById('weekly-news-modal-body').innerHTML =
+                                '<p style="text-align:center; padding: 40px 0; color:#e53e3e;">読み込みに失敗しました</p>';
+                        }
+                    }
+                });
+            });
+        }
+
+        // フィルターボタン
+        document.getElementById('archive-filters').addEventListener('click', (e) => {
+            if (e.target.classList.contains('archive-filter-btn')) {
+                document.querySelectorAll('.archive-filter-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                currentFilter = e.target.getAttribute('data-filter');
+                renderArchive(currentFilter);
+            }
+        });
+
+        // 初期化
+        async function init() {
+            await fetchAllFiles();
+            updateStats(allFiles);
+            renderArchive('all');
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', init);
+        } else {
+            init();
+        }
+    })();
+    </script>
+</body>
+
+</html>
