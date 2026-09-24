@@ -2,52 +2,52 @@
 
 ## 概要
 
-2026年9月12日〜19日の週、ユネスコの人権関連活動は「教育の権利」の実現、ジャーナリストの安全と表現の自由の強化、そして危機下における学習環境の保護を中心に展開した。主なトピックとして、2023年「平和と人権に関する教育勧告」の実施に向けた地域協議ウェビナーの開始、表現の自由と人権を基盤とするデジタルガバナンスを柱とするノルウェーとの5億3,000万クローネ規模の新協定署名、そして自然災害後の教育回復支援（ジャマイカ）が挙げられる。また第4回AIの倫理グローバルフォーラムでは、AI統治は人間の尊厳と人権を守るものでなければならないとの立場が改めて強調された。
+2026年9月12日〜19日の週、ユネスコの人権関連の活動は、平和と人権のための教育、表現の自由とジャーナリストの安全、デジタル時代の権利が中心だった。2023年「平和と人権のための教育に関する勧告」について、加盟国の報告を支援する地域ウェビナーが開かれた。また、表現の自由や人権に基づくデジタルプラットフォーム・ガバナンスを含む、ノルウェーとの5億3,000万クローネの協定が発表された。第81回国連総会（UNGA81）に向けては、AI時代の子どもの権利や表現の自由をテーマとする関連行事が予定された。このほか、文化的権利の強化を含むメキシコとの協力や、ハリケーン被害を受けたジャマイカの学校への教育支援が報告された。
 
 ---
 
-## 平和・人権・持続可能な開発のための教育に関する勧告の第1回協議ウェビナー開催
+## 平和・人権・持続可能な開発のための教育に関する勧告：第1回協議ウェビナー
 
-**日付：** 2026年9月17日
-**情報源：** [https://www.unesco.org/en/articles/first-consultation-recommendation-education-peace-human-rights-and-sustainable-development-how-1](https://www.unesco.org/en/articles/first-consultation-recommendation-education-peace-human-rights-and-sustainable-development-how-1)
+**公開日:** 2026年9月17日
+**情報源:** [https://www.unesco.org/en/articles/first-consultation-recommendation-education-peace-human-rights-and-sustainable-development-how-1](https://www.unesco.org/en/articles/first-consultation-recommendation-education-peace-human-rights-and-sustainable-development-how-1)
 
-ユネスコは2023年「平和、人権、持続可能な開発のための教育に関する勧告」の実施を支援するため、地域別協議ウェビナーシリーズを開始した。第1回（9月17日9:00〜10:30）はアジア太平洋・欧州・アフリカ地域の加盟国を対象とし、国別報告の手順や調査票の構成・内容について実践的な指針を提供し、加盟国間の意見交換を促した。加盟国は2026年11月15日までに国別実施報告書を提出するよう求められており、ラテンアメリカ・カリブ・アラブ諸国向けのウェビナーも9月18日・29日に予定されている。
-
----
-
-## ユネスコとノルウェー、教育・文化・表現の自由の推進に向け新協定を締結
-
-**日付：** 2026年9月16日
-**情報源：** [https://www.unesco.org/en/articles/unesco-and-norway-strengthen-their-partnership-through-new-agreement-to-advance-education-culture-and](https://www.unesco.org/en/articles/unesco-and-norway-strengthen-their-partnership-through-new-agreement-to-advance-education-culture-and)
-
-ユネスコ事務局長カレド・エル=エナニーとノルウェーの開発機関NORADは、2026〜2029年の協力プログラム協定（5億3,000万クローネ、約5,690万米ドル相当）に署名した。内訳は教育（3億3,000万クローネ）、文化（1億2,000万クローネ）、コミュニケーション・情報（8,000万クローネ）。特にコミュニケーション・情報分野では「表現の自由と情報へのアクセス」の促進、とりわけ女性ジャーナリストを含むジャーナリストの安全確保、そしてデジタルプラットフォームガバナンスへの人権基盤アプローチの適用が明示されている。教育分野では障害のある学習者を含む脆弱なグループへの支援が含まれる。
+ユネスコは、アジア太平洋、欧州、アフリカの大半の加盟国を対象に、地域ウェビナー（9:00〜10:30、英語）を開いた。2023年勧告の実施を支援するシリーズの一つで、報告手続きと調査票の構成を説明した。ウェビナーは「各国の報告チームが報告書を準備している最中」に実践的な手引きを示すものと位置づけられている。ユネスコの勧告ページによると、今回は加盟国による初の報告サイクルで、報告書の提出期限は2026年11月15日である。
 
 ---
 
-## 学びと復興を支える：ユネスコとジャマイカ青年組織による学校支援
+## ユネスコとノルウェー、教育・文化・表現の自由の推進に向けた新協定を締結
 
-**日付：** 2026年9月18日
-**情報源：** [https://www.unesco.org/en/articles/supporting-learning-and-recovery-unesco-and-youth-reach-schools-jamaica](https://www.unesco.org/en/articles/supporting-learning-and-recovery-unesco-and-youth-reach-schools-jamaica)
+**公開日:** 2026年9月16日
+**情報源:** [https://unric.org/en/new-agreement-between-unesco-and-norway-to-advance-education-culture-and-freedom-of-expression/](https://unric.org/en/new-agreement-between-unesco-and-norway-to-advance-education-culture-and-freedom-of-expression/)
 
-ユネスコのカリブ海地域事務所はジャマイカ青年アドボカシーネットワークと連携し、ハリケーン・メリッサによる被害を受けたセント・エリザベス教区の4校へ教科書・絵本・学用品などの教育資材を届けた（9月15日実施）。「試験準備（#ExamReady）」イニシアチブではカリブ中等教育資格（CSEC）試験対策の個別指導も提供した。このプログラムは基本的人権としての教育の権利を直接具現化するものであり、自然災害後の復旧期においても脆弱な生徒が学習機会を維持できるよう取り組んでいる。
-
----
-
-## ユネスコ第4回AIの倫理グローバルフォーラム：人権に基づくAIガバナンスの強化
-
-**日付：** 2026年9月18日
-**情報源：** [https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia](https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia)
-
-サウジアラビア・リヤドで開催されたユネスコ第4回AIの倫理グローバルフォーラムには50以上の加盟国から6,300名以上が参加し、AIは人間の尊厳・人権・公益に資するものでなければならないという原則が改めて確認された。更新版RAM 2.0ツールには女性・障害者・先住民族の視点が組み込まれ、小島嶼開発途上国やアフリカ諸国のAIガバナンス能力格差解消も重点課題として取り上げられた。フォーラムは2021年AIの倫理に関する勧告が人権中心のAI開発・展開を定める根拠規範であることを再確認した。
+ユネスコのハーレド・エル＝エナーニー事務局長とノルウェー政府は、2026〜2029年の協力プログラム協定（5億3,000万ノルウェー・クローネ、約5,690万米ドル）に署名した。内訳は、教育が3億3,000万、文化が1億2,000万、コミュニケーション・情報が8,000万クローネである。コミュニケーション・情報分野では、表現の自由、情報へのアクセス、ジャーナリストの安全を重点とし、女性ジャーナリストに特に配慮する。また、人権に基づくデジタルプラットフォーム・ガバナンスを通じて情報の健全性を支える。訂正時点でユネスコ側の記事にアクセスできなかったため、国連広報センター（UNRIC）の掲載を情報源とした。
 
 ---
 
-## ユネスコ、メキシコとの協力継続を再確認
+## UNGA81：AI時代の子どもの権利と表現の自由に関するユネスコ関連行事
 
-**日付：** 2026年9月12日
-**情報源：** [https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges](https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges)
+**公開日:** 2026年9月18日
+**情報源:** [https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean](https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean)
 
-ユネスコは教育・文化・デジタル変革を含む共通の社会課題に取り組むためのメキシコとのパートナーシップを再確認する声明を発表した。この協力にはメディアの自由やガバナンスなど人権に直接関わる分野も含まれている（記事本文はサーバーエラーにより取得不可）。
+ユネスコのUNGA81関連行事の一覧には、「AI時代の子どもの権利と保護のための連合」と「地中海における情報の健全性と表現の自由」が含まれている（いずれも9月22日）。同じ記事でユネスコは、AIは「人間の知性、尊厳、主体性に奉仕すべきであり、それらを弱めたり置き換えたりしてはならない」と述べている。
+
+---
+
+## 学びと復興を支える：ユネスコと若者がジャマイカの学校を支援
+
+**公開日:** 2026年9月18日
+**情報源:** [https://www.unesco.org/en/articles/supporting-learning-and-recovery-unesco-and-youth-reach-schools-jamaica](https://www.unesco.org/en/articles/supporting-learning-and-recovery-unesco-and-youth-reach-schools-jamaica)
+
+9月15日、ユネスコ・カリブ事務所とジャマイカ青年アドボカシー・ネットワークが、セント・エリザベス教区の学校4校に教科書、絵本、学用品を届けた。これは、ハリケーン・メリッサからの復興を目的とする若者主導の取り組み「#ExamReady」の一環で、カリブ中等教育資格（CSEC）試験に向けた学習支援も行っている。記事自体は権利に関する表現を用いていないが、危機下で教育を受ける機会を守る事例として掲載する。
+
+---
+
+## ユネスコ、メキシコとの協力の継続を再確認
+
+**公開日:** 2026年9月12日
+**情報源:** [https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges](https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges)
+
+リディア・ブリト事務局長補のメキシコ訪問に合わせ、ユネスコは識字、技術、気候適応の分野での協力を再確認した。あわせて、「文化的権利、文化・芸術教育の強化」と、先住民族およびアフリカ系メキシコ人のコミュニティへの支援を掲げた。チアパス州の識字プログラム「Chiapas Puede」は2026年ユネスコ国際識字賞を受賞しており、「地域の知識、言語、文化」を取り入れている点が評価された。
 
 ---
 
@@ -56,9 +56,10 @@
 - https://www.unesco.org/en/human-rights
 - https://www.unesco.org/en/tags/human-rights
 - https://www.unesco.org/en/articles/first-consultation-recommendation-education-peace-human-rights-and-sustainable-development-how-1
-- https://www.unesco.org/en/articles/unesco-and-norway-strengthen-their-partnership-through-new-agreement-to-advance-education-culture-and
+- https://www.unesco.org/en/global-citizenship-peace-education/recommendation
+- https://unric.org/en/new-agreement-between-unesco-and-norway-to-advance-education-culture-and-freedom-of-expression/
+- https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean
 - https://www.unesco.org/en/articles/supporting-learning-and-recovery-unesco-and-youth-reach-schools-jamaica
-- https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia
 - https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges
-- https://www.unesco.org/en/newsroom/news
-- https://www.unesco.org/en/days/democracy
+
+*訂正（2026-09-24）：ノルウェー協定の署名相手をNORADとしていたため、ノルウェー政府に改め、確認できない記述を削除した。ジャマイカの項目で、記事にない「教育の権利」という位置づけを記載していたため、改めた。メキシコ関連の項目は、タイトルからの推測で要約していたため、原文を確認して書き直した。確認できない後続ウェビナーの日程は削除した。AI倫理フォーラムの項目は、人権に直接関わる国連総会関連行事の項目に差し替えた。*

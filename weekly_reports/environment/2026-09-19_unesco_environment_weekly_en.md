@@ -2,16 +2,7 @@
 
 ## Overview
 
-During the week of September 12–19, 2026, UNESCO's environmental activities were primarily channeled through high-level diplomacy at the 81st UN General Assembly (UNGA81) and international events marking the World Day for Underwater Cultural Heritage. Key highlights include UNESCO's IOC leading the launch of the OceanEye International Alliance for the Global Ocean Observing System, a high-level UN Declaration on sea-level rise, and the introduction of an AI environmental impact toolkit at the 4th Global Forum on the Ethics of AI in Riyadh. Qatar also convened a national seminar on coastal and maritime heritage conservation. While dedicated environment-specific publications were limited compared to earlier weeks, environmental priorities — particularly ocean science, climate resilience, and sustainable AI — were firmly embedded in UNESCO's UNGA and AI governance agendas.
-
----
-
-## UNESCO Calls for Global Cooperation on AI and Ocean Science at UNGA81
-
-**Date:** September 18, 2026
-**Source:** [https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean](https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean)
-
-During the High-Level Week of the 81st UN General Assembly, UNESCO advocated for international collaboration on ocean science and climate action. The IOC co-led the launch of OceanEye — the International Alliance for the Global Ocean Observing System — mobilizing investment to strengthen ocean observations that inform sea-level rise projections and support sustainable blue economies. UNESCO also signed a new cooperation agreement with the UNFCCC to advance joint climate action, science, and education, and launched the ONE OCEAN exhibition using the Spilhaus projection to visualize Earth's interconnected oceans and promote ocean literacy. The SEA BEYOND partnership with the Prada Group was featured to advance ocean literacy among students globally.
+During the week of September 12–19, 2026, UNESCO's environmental news focused mainly on ocean science ahead of the 81st UN General Assembly (UNGA81). UNESCO's Intergovernmental Oceanographic Commission (IOC) highlighted ocean acidification, underfunding of ocean observing systems, and the expected adoption of a UN Declaration on Sea Level Rise. UNESCO also announced ocean-related events for UNGA and an agreement with the UNFCCC that it is expected to sign there. In Qatar, a seminar examined coastal and maritime heritage, and the AI ethics forum in Riyadh launched a toolkit on AI, environment and ecosystems. Few items were published that focused only on the environment.
 
 ---
 
@@ -20,7 +11,16 @@ During the High-Level Week of the 81st UN General Assembly, UNESCO advocated for
 **Date:** September 16, 2026
 **Source:** [https://www.ioc.unesco.org/en/articles/ocean-unga81](https://www.ioc.unesco.org/en/articles/ocean-unga81)
 
-UNESCO's Intergovernmental Oceanographic Commission (IOC) published a briefing highlighting three ocean milestones at UNGA81's High-Level Week. At the SDG Moment, ocean acidification (SDG indicator 14.3.1) and chronic underfunding of the Global Ocean Observing System — which delivers 120,000 near-real-time daily observations from 64 countries — were flagged as urgent priorities. OceanEye, the new International Alliance for the Global Ocean Observing System, was formally launched to mobilize sustained investment in ocean observation infrastructure. A High-Level Meeting on Sea Level Rise produced a UN Declaration acknowledging that sea level rise has accelerated from approximately 1.5 mm/year in the 20th century to roughly 3.4 mm/year currently, posing mounting threats to coastal populations and Small Island Developing States.
+The IOC outlined its ocean priorities for UNGA81's High-Level Week. According to the IOC, the Global Ocean Observing System already delivers "some 120,000 near-real-time daily ocean observations from 64 countries." However, only 210 of the 294 core stations of the Global Sea Level Observing System (GLOSS) are currently active. The High-Level Meeting on Sea Level Rise was "expected to adopt, by consensus, the UN Declaration on Sea Level Rise." Sea-level rise has accelerated from about 1.5 mm per year for most of the 20th century to roughly 3.4 mm per year today.
+
+---
+
+## UNESCO calls for global cooperation to address current global challenges of Artificial Intelligence and Ocean Science at UNGA
+
+**Date:** September 18, 2026
+**Source:** [https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean](https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean)
+
+UNESCO's UNGA81 programme includes a meeting of the International Alliance for the Global Ocean Observing System and the opening of the ONE OCEAN exhibit, both on September 23. The exhibit uses the Spilhaus projection to present a single, interconnected global ocean. The article also features SEA BEYOND, a partnership between the Prada Group and UNESCO's IOC, and says UNESCO is expected to sign an institutional cooperation agreement with the UNFCCC during UNGA.
 
 ---
 
@@ -29,16 +29,16 @@ UNESCO's Intergovernmental Oceanographic Commission (IOC) published a briefing h
 **Date:** September 16, 2026
 **Source:** [https://www.unesco.org/en/articles/qatar-marks-world-day-underwater-cultural-heritage-seminar-coastal-and-maritime-heritage](https://www.unesco.org/en/articles/qatar-marks-world-day-underwater-cultural-heritage-seminar-coastal-and-maritime-heritage)
 
-Qatar Museums organized a national seminar to mark the World Day for Underwater Cultural Heritage, convening archaeologists, conservators, and heritage professionals to discuss conservation and sustainable management of submerged cultural heritage. The event highlighted Qatar's accession to UNESCO's 2001 Convention on the Protection of the Underwater Cultural Heritage and the need to safeguard the country's maritime legacy — including historic pearling grounds and traditional fish trap structures called masakir. Discussions also addressed the growing threats to submerged archaeological sites from coastal erosion and environmental change linked to climate shifts.
+Qatar Museums and the UNESCO Regional Office for the Gulf States and Yemen held a seminar at the National Museum of Qatar to mark the World Day for Underwater Cultural Heritage, observed on August 21. Speakers discussed the 2001 Convention on the Protection of the Underwater Cultural Heritage, pearling heritage, and traditional fish-trap structures known as masakir. One site was described as offering "valuable insights into the relationship between environmental change, sea-level fluctuations, and human settlement patterns."
 
 ---
 
-## AI Environmental Impact Toolkit Launched at 4th UNESCO Global Forum on the Ethics of AI
+## AI, environment and ecosystems toolkit launched at the 4th Global Forum on the Ethics of AI
 
-**Date:** September 18, 2026 (event: September 14–17, 2026)
+**Date:** September 18, 2026 (forum held September 14–17, 2026)
 **Source:** [https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia](https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia)
 
-At the 4th UNESCO Global Forum on the Ethics of AI in Riyadh, Saudi Arabia, UNESCO launched a new AI environmental impact toolkit designed to guide policymakers in assessing and reducing the ecological footprint of AI systems. The toolkit responds to growing concern over energy consumption and carbon emissions associated with large-scale AI training and deployment. Thematic sessions at the forum also addressed the broader environmental implications of the agentic AI revolution, including impacts on ecosystems and the role AI can play in advancing sustainability goals.
+At the forum in Riyadh, UNESCO launched an "AI, environment and ecosystems toolkit" alongside other tools for implementing its 2021 Recommendation on the Ethics of AI. The article does not describe the toolkit's contents in detail.
 
 ---
 
@@ -46,10 +46,9 @@ At the 4th UNESCO Global Forum on the Ethics of AI in Riyadh, Saudi Arabia, UNES
 
 - https://www.unesco.org/en/ecology-environment
 - https://www.unesco.org/en/tags/environment
-- https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean
 - https://www.ioc.unesco.org/en/articles/ocean-unga81
+- https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean
 - https://www.unesco.org/en/articles/qatar-marks-world-day-underwater-cultural-heritage-seminar-coastal-and-maritime-heritage
 - https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia
-- https://www.ioc.unesco.org/en
-- https://whc.unesco.org/en/news/2900
-- https://www.unesco.org/en/newsroom/news
+
+*Correction (2026-09-24): The first version said a UN Declaration on Sea Level Rise had been adopted; the source only said adoption was expected. Changed "signed" to "expected to sign" for the UNFCCC agreement, and the ONE OCEAN exhibit had not yet opened. In the Qatar item, removed claims about Qatar's accession to the Convention and about erosion threats, which the article does not support. In the toolkit item, removed claims that could not be confirmed.*

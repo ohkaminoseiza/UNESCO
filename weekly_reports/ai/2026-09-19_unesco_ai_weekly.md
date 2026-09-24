@@ -2,52 +2,52 @@
 
 ## 概要
 
-2026年9月12日〜19日の週は、ユネスコが9月14日〜17日にサウジアラビア・リヤドで開催した第4回「AIの倫理に関するグローバルフォーラム（GFEAI 2026）」が最大の焦点となった。50以上の加盟国から約6,300名以上（8,000名規模）の参加者を集めたこのフォーラムは、ユネスコの2021年「AIの倫理に関する勧告」採択から5周年を記念するものであり、国際的なAI倫理ガバナンスの強化に向けた具体的な成果物——更新版「準備状況評価手法（RAM 2.0）」およびAI環境影響ツールキット——を発表した。また、ユネスコは第81回国連総会（UNGA81）においてもAIガバナンスや海洋科学の優先課題を代表し、パリ本部では学生向けAI教育イベントも実施した。
+2026年9月12日〜19日の週の中心は、ユネスコがサウジアラビアと共催した第4回「AIの倫理に関するグローバルフォーラム」（リヤド、9月14〜17日）だった。ユネスコの報告によると、参加者は6,300人以上、加盟国代表団は50以上にのぼった。会期中には「AI・環境・生態系ツールキット」や、準備状況評価手法の強化版「RAM 2.0」などの実施支援ツールが公開された。第81回国連総会（UNGA81）を前に、ユネスコは国連AIガバナンス対話の共同議長として重点課題を示した。このほか、学生700人が参加したAIと学びに関するイベント、ベルーニー賞受賞者によるAI倫理の議論、AIと子どもの学びを含むメキシコとの新たな合意が報告された。
 
 ---
 
-## サウジアラビアにおけるユネスコ第4回AIの倫理グローバルフォーラム（GFEAI 2026）の成果
+## 第4回AIの倫理グローバルフォーラム（サウジアラビア）で倫理的AIガバナンスへの国際協力を強化
 
-**日付：** 2026年9月18日（イベント開催：2026年9月14〜17日）
-**情報源：** [https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia](https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia)
+**公開日:** 2026年9月18日（フォーラム会期：2026年9月14〜17日）
+**情報源:** [https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia](https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia)
 
-ユネスコとサウジアラビア王国（SDAIA・ICARIEを通じて）は「倫理的AIガバナンスのためのグローバル協力の変革」をテーマに第4回AIの倫理グローバルフォーラムをリヤドで共催し、約50カ国の大臣・副大臣を含む約8,000名が参加した。主な成果として、RAM 2.0（女性・障害者・先住民族の視点を取り込んだ更新版AI準備状況評価手法）と、AIの生態系への影響を低減するための政策立案者向けAI環境影響ツールキットが発表された。また、エージェント型AIの影響、ジェンダー平等、文化的示唆、若者のメンタルヘルスに関するテーマ別セッションも実施され、2021年AIの倫理に関する勧告から5年間の進捗が検証された。
-
----
-
-## 新技術と人工知能とともに学ぶ
-
-**日付：** 2026年9月16日
-**情報源：** [https://www.unesco.org/en/articles/learning-new-technologies-and-artificial-intelligence](https://www.unesco.org/en/articles/learning-new-technologies-and-artificial-intelligence)
-
-ユネスコはパリ本部で約700名の学生を対象とするキャンパスイベントを開催し、AIおよびデジタル技術が教育実践をどのように変革しているかを探った。専門家パネルは、知的作業をAIに委ねることなく批判的思考と人間の努力を保持することの重要性を論じ、ソーシャルメディア上の誤情報対策についても議論した。「教育の未来はアルゴリズムだけによって書かれるわけではない」と強調され、TECH4ALL（Huawei）・IIIA-CSIC・教育デジタルイノベーション技術研究所（LINE）がパートナーとして参加した。
+フォーラムは、ユネスコとサウジアラビア王国がリヤドで共催した。サウジアラビア側はサウジデータ・AI庁（SDAIA）と国際AI研究倫理センター（ICAIRE）が代表した。ユネスコによると、参加者は6,300人以上、加盟国代表団は50以上だった。公開された主なものは、「AI・環境・生態系ツールキット」、より実践志向に強化した準備状況評価手法「RAM 2.0」、55か国の報告書のメタ分析、16か国17人が参加する「AI倫理アクション・コホート」である。
 
 ---
 
-## ユネスコ、UNGA81においてAIと海洋科学の課題に対するグローバル協力を呼びかける
+## 新しい技術と人工知能とともに学ぶ
 
-**日付：** 2026年9月18日
-**情報源：** [https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean](https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean)
+**公開日:** 2026年9月16日
+**情報源:** [https://www.unesco.org/en/articles/learning-new-technologies-and-artificial-intelligence](https://www.unesco.org/en/articles/learning-new-technologies-and-artificial-intelligence)
 
-ユネスコは第81回国連総会ハイレベルウィークにおいて、多国間AIガバナンスおよび海洋科学の優先課題を代表した。AIに関しては、「AIモデルの開発は人間の知性・尊厳・主体性に奉仕するものでなければならない」と訴えながらUN AIガバナンス対話を共同議長として主導した。また、気候行動・科学・教育の強化を目的としてUNFCCC・UNAOCとの新たな協力協定に署名するとともに、ONE OCEANエキシビションを発表して海洋リテラシーの普及に取り組んだ。
-
----
-
-## ユネスコ・ウズベキスタン・ベルーニー賞受賞者、カザフスタンでAI倫理を論じる
-
-**日付：** 2026年9月18日
-**情報源：** [https://www.unesco.org/en/articles/unesco-uzbekistan-beruniy-prize-laureates-highlight-ethics-ai-kazakhstan](https://www.unesco.org/en/articles/unesco-uzbekistan-beruniy-prize-laureates-highlight-ethics-ai-kazakhstan)
-
-ユネスコ・ウズベキスタン・ベルーニー賞の受賞者がカザフスタンでのイベントに参加し、AIの開発・活用における倫理的側面を取り上げた。このイベントはユネスコが中央アジア全域で進める科学技術倫理に関する継続的な取り組みを強化するものであり、2021年AIの倫理に関する勧告に基づいたAIガバナンスフレームワークへの地域的なエンゲージメントを構築した。
+パリのユネスコ本部で開かれたユネスコ・キャンパスに学生700人が集まり、デジタル技術やAIが学びに与える影響を話し合った。登壇者には、人工知能研究所（IIIA-CSIC）のマルガリーダ・ロメロ氏や、教育デジタル技術イノベーション研究所（LINE）の創設者がいた。登壇者は、AIは学ぶ努力を肩代わりするものではなく人の意図を増幅するものだと述べ、「誤情報は7倍速く広がる」と指摘してソーシャルメディアに対する批判的思考の重要性を強調した。主要パートナーはHuaweiのTECH4ALLで、記事は「教育の未来はアルゴリズムだけで書かれるのではない」と結んでいる。
 
 ---
 
-## ユネスコ、メキシコとの協力継続を再確認
+## ユネスコ、国連総会でAIと海洋科学の課題に対する国際協力を呼びかけ
 
-**日付：** 2026年9月12日
-**情報源：** [https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges](https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges)
+**公開日:** 2026年9月18日
+**情報源:** [https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean](https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean)
 
-ユネスコは共通の社会課題に取り組むためのメキシコとの協力を再確認する声明を発表した。この記事はユネスコのAI・新興技術コンテンツの中に掲載されており、AIガバナンスやデジタル変革がこの二国間協力の重要テーマであることを示唆している（記事本文はサーバーエラーにより取得不可）。
+UNGA81のハイレベルウィークを前に、ユネスコは国連AIガバナンス対話の共同議長として取り組みを示し、AIは「人間の知性、尊厳、主体性に奉仕すべきであり、それらを弱めたり置き換えたりしてはならない」と述べた。予定されているユネスコ関連行事には、「Digital@UNGA 2026」（9月21日）や「AI時代の子どもの権利と保護のための連合」（9月22日）がある。記事によると、国連総会の期間中に国連気候変動枠組条約（UNFCCC）および国連文明の同盟（UNAOC）と機関間協力協定に署名する予定である。
+
+---
+
+## ユネスコ・ウズベキスタン・ベルーニー賞受賞者、カザフスタンでAI倫理を議論
+
+**公開日:** 2026年9月18日
+**情報源:** [https://www.unesco.org/en/articles/unesco-uzbekistan-beruniy-prize-laureates-highlight-ethics-ai-kazakhstan](https://www.unesco.org/en/articles/unesco-uzbekistan-beruniy-prize-laureates-highlight-ethics-ai-kazakhstan)
+
+ベルーニー賞受賞者のヴィルジリオ・アルメイダ教授とリャン・ジェン教授が、2026年8月5〜6日にカザフスタンのアスタナで開かれた第3回国際人工知能オリンピックに参加した。両教授は、出場者300人以上と各国の専門家200人とともに、説明責任、ガバナンスの枠組み、責任あるAI開発といったAI倫理のテーマについて議論を主導した。記事の公開は今週だが、内容は8月の出来事の報告である。
+
+---
+
+## ユネスコ、メキシコとの協力の継続を再確認
+
+**公開日:** 2026年9月12日
+**情報源:** [https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges](https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges)
+
+ユネスコのリディア・ブリト事務局長補がメキシコを訪問した。訪問中、チアパス州で国際識字デー60周年を記念するとともに、教育技術と水の安全保障に関する合意に署名した。AI関連では、子どもと若者の福祉と学びを守るため、「技術機器、ソーシャルメディア、人工知能の利用」について「国の教育システムに技術支援を行う」覚書が結ばれた。
 
 ---
 
@@ -55,10 +55,11 @@
 
 - https://www.unesco.org/en/artificial-intelligence
 - https://www.unesco.org/en/tags/artificial-intelligence
+- https://www.unesco.org/en/forum-ethics-ai
 - https://www.unesco.org/en/articles/global-cooperation-ethical-ai-governance-reinforced-unescos-4th-global-forum-ethics-ai-saudi-arabia
 - https://www.unesco.org/en/articles/learning-new-technologies-and-artificial-intelligence
 - https://www.unesco.org/en/articles/unesco-calls-global-cooperation-address-current-global-challenges-artificial-intelligence-and-ocean
 - https://www.unesco.org/en/articles/unesco-uzbekistan-beruniy-prize-laureates-highlight-ethics-ai-kazakhstan
 - https://www.unesco.org/en/articles/unesco-reaffirms-its-commitment-working-mexico-and-its-people-address-shared-challenges
-- https://www.unesco.org/en/forum-ethics-ai
-- https://www.unesco.org/en/newsroom/news
+
+*訂正（2026-09-24）：初版ではフォーラムの参加者数を6,300人と8,000人の2通りで記載していたため、実績の6,300人に統一した（8,000人は開催前の見込み）。UNFCCC・UNAOCとの協定を「署名した」と記載していたため、「署名予定」に改めた。メキシコ関連とベルーニー賞の項目は、タイトルからの推測で要約していたため、原文を確認して書き直した。*
