@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- 自動生成ファイル: scripts/build_weekly.py が weekly_reports/ と templates/weekly/ から生成します。直接編集しないでください。 -->
+<html lang="$lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$title</title>
+    <meta name="description" content="$description">
+    <link rel="canonical" href="$canonical">
+$alternates
+    <meta property="og:type" content="$og_type">
+    <meta property="og:title" content="$og_title">
+    <meta property="og:description" content="$description">
+    <meta property="og:url" content="$canonical">
+    <meta property="og:site_name" content="$site_title">
+    <meta property="og:locale" content="$og_locale">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="${root}style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXGG2W91WF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HXGG2W91WF');
+    </script>
+    <!-- End Google Analytics -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="${root}apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="${root}favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="${root}favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="${root}favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="site-title"><a href="${home}index.html">$site_title</a></p>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="${home}index.html">Home</a></li>
+                    <li><a href="${home}weekly/index.html">Weekly</a></li>
+                    <li><a href="${home}about.html">About</a></li>
+                    <li><a href="${home}archive/index.html">Archive</a></li>
+                    <li class="lang-nav">$lang_switch</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container weekly-page">
+$main
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="${home}index.html">Home</a>
+                <a href="${home}weekly/index.html">Weekly</a>
+                <a href="${home}about.html">About</a>
+            </div>
+            <p class="copyright">$copyright</p>
+        </div>
+    </footer>
+</body>
+
+</html>

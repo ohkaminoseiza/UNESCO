@@ -1,20 +1,33 @@
 # UNESCO ウィークリーレポート自動生成システム ガイド
 
 作成日: 2026-07-14  
+更新日: 2026-09-24（B型＝公開前にHTMLを生成する方式へ移行）  
 対象リポジトリ: `ohkaminoseiza/UNESCO`
 
 ---
 
 ## 1. システム全体の構成
 
-このサイトは、毎週日曜日に以下の4つの仕組みが連携して自動更新されます。
+このサイトは、毎週以下の仕組みが連携して自動更新されます（「公開前に記事ページを作る」B型）。
 
 ```
 Claude (AI)
-  → GitHub リポジトリ (weekly_reports/)
-    → GitHub Pages (自動公開)
-      → weekly-news.js (ブラウザで読み込み・表示)
+  → weekly_reports/ に Markdown 原稿を push
+    → GitHub Actions (build-weekly.yml) が HTML を生成してコミット
+      → GitHub Pages が公開
 ```
+
+生成されるページ:
+
+| ページ | 日本語 | 英語 |
+|------|------|------|
+| レポート個別ページ | `weekly/{ai,human-rights,environment}/YYYY-MM-DD.html` | `en/weekly/.../YYYY-MM-DD.html` |
+| テーマ別一覧 | `weekly/{テーマ}/index.html` | `en/weekly/{テーマ}/index.html` |
+| 全レポート一覧 | `weekly/index.html` | `en/weekly/index.html` |
+| トップページの「最新のウィークリーレポート」とサイドバー | `index.html` の GENERATED 範囲 | `en/index.html` の GENERATED 範囲 |
+
+各レポートは専用URLを持ち、JavaScript なしで表示され、検索エンジンにも認識されます。
+旧 `weekly-news-archive.html` は `weekly/index.html` への転送ページです。
 
 ---
 
@@ -41,15 +54,23 @@ weekly_reports/
     YYYY-MM-DD_unesco_environment_weekly_en.md
 ```
 
-### GitHub Pages
-- `main` ブランチへの `git push` を検知して自動でサイトを更新する
-- カスタムのYAMLファイルは不要。GitHub組み込みの `pages-build-deployment` ワークフローが動く
-- HTMLファイルはそのまま公開される（ビルド処理なし）
+### ビルド（`scripts/build_weekly.py`）
+- `weekly_reports/` の Markdown を読み、上表の HTML を生成する
+- ページのひな形は `templates/weekly/layout.html`、見た目は `style.css` の「8b. Weekly Reports」
+- `weekly/`・`en/weekly/` は毎回まるごと作り直す。生成物は**直接編集しない**（原稿かひな形を直す）
+- 命名規則に合わないファイルやタイトル行のない原稿は、警告を出して公開対象から外す／仮タイトルで公開する
+- 手元での確認: `pip install -r scripts/requirements.txt` → `python3 scripts/build_weekly.py`
 
-### `weekly-news.js`
-- 訪問者がページを開いた際にブラウザ上で動作する
-- GitHub API（`api.github.com`）でファイル一覧を取得し、最新のMarkdownを読み込む
-- ページの言語（`lang` 属性）に応じて日本語版・英語版を自動選択して表示する
+### GitHub Actions（`.github/workflows/build-weekly.yml`）
+- `weekly_reports/` などへの push をきっかけにビルドし、生成物に変化があるときだけコミットする
+- ボットのコミットは次のワークフローを起動しないため、無限ループにならない
+- 失敗した場合は GitHub の「Actions」タブで確認できる。「Run workflow」から手動実行も可能
+
+### GitHub Pages
+- `main` ブランチをそのまま公開する（設定の変更は不要）
+
+### AIへの品質ルール
+- リポジトリ直下の `CLAUDE.md` に記載。Claude はこのファイルを毎回自動で読み込むため、週次の定期実行にも適用される
 
 ---
 
@@ -229,18 +250,19 @@ git push origin main
 
 | 状況 | 対処 |
 |------|------|
-| `unesco.org` に直接アクセスすると403エラー | WebSearchの結果を使って情報を収集する（直接FetchはできないことがあるためWebSearch優先） |
+| `unesco.org` に直接アクセスすると403/503エラー | 時間をおいて再取得する。本文を確認できない記事は、検索結果の要約やタイトルから推測して書かない（`CLAUDE.md` の品質基準2） |
 | 特定記事の公開日が不明 | 「〇〇年〇月（今週）」と注記して掲載する |
 | 新着情報が見つからないテーマがある | 「今週は新着情報は確認できませんでした」と日英両方で記載する |
 | ディレクトリが存在しない | `mkdir -p` で作成してから保存する |
+| 公開後に誤りが見つかった | 原稿を修正し、末尾に訂正の注記を追記する。HTML は自動で作り直される |
+| サイトに新しいレポートが出ない | GitHub の「Actions」タブで build-weekly の結果と警告を確認する（ファイル名・タイトル行の誤りが多い） |
 
 ---
 
-## 6. GitHub Pages の仕組み（参考）
-
-カスタムのGitHub Actions YAMLファイルは不要です。
-`main` ブランチへの `git push` だけで、GitHub組み込みの `pages-build-deployment` ワークフローが自動的にサイトを更新します。
+## 6. 公開までの流れ（参考）
 
 ```
-git push → GitHub Pages が検知 → pages-build-deployment 起動 → サイト反映
+Claude が weekly_reports/ に push
+  → build-weekly.yml が起動し HTML を生成・コミット（数十秒〜数分）
+    → GitHub Pages の pages-build-deployment がサイトに反映
 ```

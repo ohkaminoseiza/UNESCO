@@ -1,0 +1,61 @@
+name: Build weekly report pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "weekly_reports/**"
+      - "templates/weekly/**"
+      - "scripts/**"
+      - "index.html"
+      - "en/index.html"
+      - ".github/workflows/build-weekly.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: build-weekly
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Build pages from Markdown
+        run: python scripts/build_weekly.py
+
+      - name: Commit generated pages
+        id: commit
+        run: |
+          git add -A weekly en/weekly index.html en/index.html
+          if git diff --cached --quiet; then
+            echo "No changes to generated pages."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Build weekly report pages"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+      # Pushes made with GITHUB_TOKEN do not start other workflows, so this job
+      # cannot loop; request the Pages rebuild explicitly as well.
+      - name: Request GitHub Pages build
+        if: steps.commit.outputs.pushed == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds"

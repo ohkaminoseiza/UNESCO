@@ -398,6 +398,250 @@ a:hover {
 }
 
 /* ==========================================================================
+   8b. Weekly Reports（scripts/build_weekly.py が生成するページ・トップページの生成領域）
+   ========================================================================== */
+.weekly-page {
+    max-width: 860px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+}
+
+.breadcrumb {
+    font-size: 0.85rem;
+    color: #718096;
+    margin-bottom: 20px;
+}
+
+.weekly-badge {
+    display: inline-block;
+    padding: 1px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2c5282;
+    vertical-align: 1px;
+}
+
+.weekly-badge--ai { background-color: #5a67d8; }
+.weekly-badge--human-rights { background-color: #b7791f; }
+.weekly-badge--environment { background-color: #2f855a; }
+
+.weekly-article {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.weekly-article-header {
+    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 1.5rem;
+}
+
+.weekly-article-header h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #2d3748;
+    margin: 0.3rem 0 1rem;
+}
+
+.weekly-meta {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+.weekly-body {
+    overflow-wrap: anywhere;
+}
+
+.weekly-body h2 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #2d3748;
+    border-left: 4px solid #2c5282;
+    padding-left: 12px;
+    margin: 2rem 0 0.8rem;
+}
+
+.weekly-body hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 2rem 0;
+}
+
+.weekly-body ul {
+    padding-left: 1.4em;
+}
+
+.weekly-body table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+}
+
+.weekly-body th,
+.weekly-body td {
+    border: 1px solid #e2e8f0;
+    padding: 6px 10px;
+}
+
+.weekly-pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.weekly-pager a {
+    font-weight: bold;
+}
+
+.weekly-related {
+    background: #ffffff;
+    padding: 20px 24px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.weekly-related h2 {
+    font-size: 1rem;
+    margin: 0 0 10px;
+    color: #2d3748;
+}
+
+.weekly-related ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.weekly-related li {
+    margin-bottom: 8px;
+}
+
+.weekly-list-header h1 {
+    font-size: 1.7rem;
+    color: #2d3748;
+    margin: 0 0 8px;
+}
+
+.weekly-list-header p {
+    color: #4a5568;
+    margin: 0 0 6px;
+}
+
+.weekly-stats {
+    font-size: 0.85rem;
+    color: #718096 !important;
+}
+
+.weekly-filter,
+.weekly-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.weekly-filter {
+    margin: 20px 0 28px;
+}
+
+.weekly-chip {
+    display: inline-block;
+    padding: 4px 14px;
+    border: 1px solid #bee3f8;
+    border-radius: 999px;
+    background: #ffffff;
+    font-size: 0.85rem;
+    color: #2c5282;
+}
+
+.weekly-chip:hover,
+.weekly-chip.is-active {
+    background: #2c5282;
+    border-color: #2c5282;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.weekly-chip--ai { border-left: 4px solid #5a67d8; }
+.weekly-chip--human-rights { border-left: 4px solid #b7791f; }
+.weekly-chip--environment { border-left: 4px solid #2f855a; }
+
+.weekly-archive-month h2 {
+    font-size: 1.1rem;
+    color: #2d3748;
+    border-bottom: 2px solid #2c5282;
+    padding-bottom: 8px;
+}
+
+.weekly-archive-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 16px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border-radius: 8px;
+    border-left: 3px solid #2c5282;
+}
+
+.weekly-archive-row time {
+    min-width: 9em;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #4a5568;
+}
+
+.weekly-card h2 {
+    margin: 0 0 8px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.weekly-latest {
+    margin-top: 50px;
+}
+
+.weekly-more {
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.weekly-widget-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.weekly-widget-list li {
+    margin-bottom: 12px;
+}
+
+.weekly-widget-list time {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #4a5568;
+    margin-bottom: 4px;
+}
+
+.weekly-widget-list .weekly-chip {
+    padding: 2px 10px;
+    font-size: 0.8rem;
+}
+
+.lang-current {
+    color: #666666;
+    font-weight: bold;
+}
+
+/* ==========================================================================
    9. Responsive (レスポンシブ対応)
    ========================================================================== */
 @media screen and (max-width: 768px) {
@@ -437,5 +681,13 @@ a:hover {
     
     .philosophy-section p {
         font-size: 1rem;
+    }
+
+    .weekly-article {
+        padding: 1.25rem;
+    }
+
+    .weekly-article-header h1 {
+        font-size: 1.3rem;
     }
 }
